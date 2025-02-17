@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Inter";
+        src: url("@/assets/fonts/Inter-Regular.ttf") format("truetype");
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: "Inter";
+        src: url("@/assets/fonts/Inter-ExtraBold.ttf") format("truetype");
+        font-weight: 600;
+    }
+
+    h1 {
+        @apply text-h1 font-extrabold;
+    }
+
+    h2 {
+        @apply text-h2 font-extrabold;
+    }
+
+    h3 {
+        @apply text-h3 font-normal;
+    }
+
+    h4 {
+        @apply text-h4 font-normal;
+    }
+
+    h5 {
+        @apply text-h5 font-normal;
+    }
+
+    body {
+        @apply text-body font-normal;
+    }
+
+    a {
+        @apply text-blue-500 font-normal underline
+    }
+
+    html {
+        font-size: 16px;
+        font-family: "Inter", serif !important;
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+    }
+
+    #root {
+        height: 100vh;
+    }
+}
+
+@layer utilities {
+    responsive {
+        .no-scrollbar::state(webkit-scrollbar) {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+}

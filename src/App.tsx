@@ -3,7 +3,7 @@ import "@/assets/styles/main.scss";
 function App() {
   return (
     <>
-      <div className="">
+      <div className="text">
         Page is live
       </div>
     </>

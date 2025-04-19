@@ -11,6 +11,9 @@ export default {
           white: {
             DEFAULT: "#F4F4F4"
           },
+          green: {
+            DEFAULT: "#65ad45"
+          }
         },
         fontFamily: {
           sans: ["Inter", "sans-serif"],

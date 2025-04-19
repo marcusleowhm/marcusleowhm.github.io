@@ -13,27 +13,41 @@ export const Button = ({ variant, onClick, children }: CustomButtonProps): React
 }
 
 const buildClass = (variant: "contained" | "outlined" | "text" = "contained") => {
-    const DEFAULT_PADDING_CLASS: string = "p-2";
-    const DEFAULT_CURSOR_CLASS: string = "cursor-pointer";
-    
-    const BORDER_STYLE_CLASS = "border-solid";
-    const BORDER_WIDTH_CLASS = "border-2"
-    const BORDER_RADIUS = "rounded-xl"
-
-    var finalClass: string[] = [];
-    switch(variant) {
-        case "contained":
-            break;
-        case "outlined":
-            finalClass.push(BORDER_STYLE_CLASS);
-            finalClass.push(BORDER_WIDTH_CLASS);
-            finalClass.push(BORDER_RADIUS);
-            break;
-        case "text": 
-            break;
+    const common: { [key: string]: string } = {
+        padding: "p-2",
+        margin: "m-2",
+        cursor: "cursor-pointer",
+        onHover: "hover:scale-125"
     }
+    var finalClass: string[] = [];
+    for (const key of Object.keys(common)) finalClass.push(common[key])
 
-    finalClass.push(DEFAULT_PADDING_CLASS);
-    finalClass.push(DEFAULT_CURSOR_CLASS);
+    const styleObject = createStyleObject(variant);
+    for (const key of Object.keys(styleObject)) finalClass.push(styleObject[key])
     return finalClass.join(" ");
+}
+
+const createStyleObject = (variant: string): {[key: string]: string} => {
+    switch (variant) {
+        case "contained": 
+        return {
+            color: "bg-green",
+            textColor: "text-white",
+            radius: "rounded-xl",
+        }
+        case "outlined": 
+        return {
+            border: "border-solid",
+            borderColor: "border-green",
+            textColor: "text-green",
+            width: "border",
+            radius: "rounded-xl"
+        }
+        case "text": 
+        return {
+            textColor: "text-green",
+        }
+        default: 
+        return {}
+    }
 }

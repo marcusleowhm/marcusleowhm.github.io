@@ -1,22 +1,15 @@
 import "@/assets/styles/main.scss";
-import React from "react";
-import config from "../config/profile.json";
-import { Hero } from "./components/Hero";
-import { TabContainer } from "./components/TabContainer";
+import { GridLayout12Cols } from "./components/layout/GridLayout12Cols";
+import { Navbar } from "./components/nav/Navbar";
 
 function App() {
-  React.useEffect(() => {
-    document.title = `${config.name}'s Profile`;
-  }, []);
-
   return (
-    <>
-      <div className="flex flex-col h-full">
-        <Hero />
-        <TabContainer />
-      </div>
-    </>
-  );
+    <div>
+      <GridLayout12Cols>
+         <Navbar className="col-start-2 col-span-10"/>
+      </GridLayout12Cols>
+    </div>
+  )
 }
 
 export default App;

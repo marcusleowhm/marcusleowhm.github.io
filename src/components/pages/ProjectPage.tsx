@@ -1,10 +1,10 @@
 import React from 'react'
 import { BasePage } from '../layout/BasePage'
 
-export const HomePage = (): React.JSX.Element => {
+export const ProjectPage = (): React.JSX.Element => {
   return (
     <BasePage>
-      HomePage
+        ProjectPage
     </BasePage>
   )
 }

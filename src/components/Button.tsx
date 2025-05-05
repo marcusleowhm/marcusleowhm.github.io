@@ -4,7 +4,7 @@ interface CustomButtonProps extends React.ComponentPropsWithRef<"button"> {
     variant?: "contained" | "outlined" | "text"
 }
 
-export const Button = ({ className, variant, onClick, children }: CustomButtonProps): React.JSX.Element => {
+export const Button = ({ className = "", variant, onClick, children }: CustomButtonProps): React.JSX.Element => {
     return (
         <button className={`${className} ${buildClass(variant)}`.trim()} onClick={onClick}>
             {children}

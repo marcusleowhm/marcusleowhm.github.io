@@ -14,7 +14,7 @@ export const BasePage = ({ children }: React.ComponentPropsWithoutRef<"div">): R
         <Navbar className="md:block col-start-2 col-span-10 hidden"/>
         <Button className="md:hidden" variant='contained' onClick={() => setIsDrawerOpen(true)}>Open Menu</Button>
       </GridLayout>
-      {isDrawerOpen && <Drawer setIsDrawerOpenToClose={() => setIsDrawerOpen(false)}/>}
+      {isDrawerOpen && <Drawer className="md:hidden" setIsDrawerOpenToClose={() => setIsDrawerOpen(false)}/>}
       <GridLayout id="page__content" className="flex-1">
         <div className="md:col-start-2 col-span-10 p-4">
           {children}

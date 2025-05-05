@@ -9,6 +9,7 @@ export default {
       extend: {
         colors: {
           white: {
+            whitest: "#FFFFFF",
             DEFAULT: "#F4F4F4"
           },
           green: {

@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Button } from '@/components/Button'
 
-export const Navbar = ( {className}: React.ComponentPropsWithoutRef<"div"> ): React.JSX.Element  => {
+export const Navbar = ( {className}: React.ComponentPropsWithoutRef<"nav"> ): React.JSX.Element  => {
     return (
-        <div className={className}>
+        <nav className={className}>
             <Link to="/"><Button variant="text">Home</Button></Link>
             <Link to="/experience"><Button variant="text">Experience</Button></Link>
             <Link to="/projects"><Button variant="text">Projects</Button></Link>
-        </div>
+        </nav>
     )
 }

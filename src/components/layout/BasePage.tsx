@@ -9,17 +9,17 @@ export const BasePage = ({ children }: React.ComponentPropsWithoutRef<"div">): R
   const [isDrawerOpen, setIsDrawerOpen] = React.useState<boolean>(false);
   return (
     <>
-      <GridLayout id="nav__container">
-        <Navbar className=" hidden md:block md:border-b-2 md:border-solid md:border-gray-200 col-start-2 col-span-10"/>
+      <GridLayout id="nav__container" className="fixed w-full top-0 start-0 border-b-2 border-solid border-gray-200 z-10 bg-white-whitest shadow-sm">
+        <Navbar className="hidden md:block col-start-2 col-span-10"/>
         <Button className="size-10 md:hidden" variant='text' onClick={() => setIsDrawerOpen(true)}>
           <BurgerMenuSvg />
         </Button>
       </GridLayout>
       <Drawer className={`md:hidden ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"}`} setIsDrawerOpen={setIsDrawerOpen}/>
-      <GridLayout id="page__content" className="flex-1">
-        <div className="md:col-start-2 col-span-10 p-4">
+      <GridLayout id="page__content" className="flex-1 pt-14">
+        <section className="md:col-start-2 col-span-10 p-4">
           {children}
-        </div>
+        </section>
       </GridLayout>
     </>
   )

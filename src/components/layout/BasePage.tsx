@@ -6,12 +6,12 @@ import { Button } from '@/components/Button';
 export const BasePage = ({ children }: React.ComponentPropsWithoutRef<"div">): React.JSX.Element => {
   return (
     <>
-      <GridLayout>
-        <Navbar className="col-start-2 col-span-10 hidden md:block" />
+      <GridLayout id="nav__container">
+        <Navbar className="md:block col-start-2 col-span-10 hidden"/>
         <Button className="md:hidden" variant='contained'>Open Menu</Button>
       </GridLayout>
-      <GridLayout className="flex-1">
-        <div className="col-start-2 col-span-10 p-4">
+      <GridLayout id="page__content" className="flex-1">
+        <div className="md:col-start-2 col-span-10 p-4">
           {children}
         </div>
       </GridLayout>

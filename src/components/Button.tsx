@@ -16,8 +16,7 @@ const buildClass = (variant: "contained" | "outlined" | "text" = "contained") =>
     const common: { [key: string]: string } = {
         padding: "p-2",
         margin: "m-2",
-        cursor: "cursor-pointer",
-        onHover: "hover:scale-125"
+        cursor: "cursor-pointer"
     }
     var finalClass: string[] = [];
     for (const key of Object.keys(common)) finalClass.push(common[key])

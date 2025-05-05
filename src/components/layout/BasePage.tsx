@@ -10,7 +10,7 @@ export const BasePage = ({ children }: React.ComponentPropsWithoutRef<"div">): R
   return (
     <>
       <GridLayout id="nav__container">
-        <Navbar className="md:block col-start-2 col-span-10 hidden"/>
+        <Navbar className=" hidden md:block md:border-b-2 md:border-solid md:border-gray-200 col-start-2 col-span-10"/>
         <Button className="size-10 md:hidden" variant='text' onClick={() => setIsDrawerOpen(true)}>
           <BurgerMenuSvg />
         </Button>

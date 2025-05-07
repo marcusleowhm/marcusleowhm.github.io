@@ -11,7 +11,7 @@ export const BasePage = ({
   const [isDrawerOpen, setIsDrawerOpen] = React.useState<boolean>(false);
   const BACKGROUND_COLOR = "bg-white-whitest";
   const DARK_BACKGROUND_COLOR = "dark:bg-gray-900";
-  const BORDER_COLOR = "border-white";
+  const BORDER_COLOR = "border-gray-300";
   const DARK_BORDER_COLOR = "dark:border-gray-400"
 
   return (

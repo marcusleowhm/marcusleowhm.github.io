@@ -31,7 +31,7 @@ const createStyleObject = (variant: string): {[key: string]: string} => {
         case "contained": 
         return {
             color: "bg-green",
-            textColor: "text-white",
+            textColor: "text-white dark:text-gray-900",
             radius: "rounded-xl",
         }
         case "outlined": 
@@ -44,7 +44,7 @@ const createStyleObject = (variant: string): {[key: string]: string} => {
         }
         case "text": 
         return {
-            textColor: "text-green",
+            textColor: "text-green dark:text-green",
         }
         default: 
         return {}

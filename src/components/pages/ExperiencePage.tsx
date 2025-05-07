@@ -4,7 +4,7 @@ import { BasePage } from '../layout/BasePage'
 export const ExperiencePage = (): React.JSX.Element => {
   return (
     <BasePage>
-        ExperiencePage
+        <div className="text-black dark:text-green">ExperiencePage</div>
     </BasePage>
   )
 }

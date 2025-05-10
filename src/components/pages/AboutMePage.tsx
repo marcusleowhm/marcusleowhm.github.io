@@ -1,9 +1,9 @@
 import React from "react";
 import { BasePage } from "@/components/layout/BasePage";
-import { GeneratedPage } from '@/components/utils/pages/GeneratedPage'
+import { GeneratedPage } from "@/components/utils/pages/GeneratedPage";
 
-export const ProjectPage = (): React.JSX.Element => {
-  const pageName = "projects"
+export const AboutMe = (): React.JSX.Element => {
+  const pageName = "about-me";
   return (
     <BasePage>
       <div className="text-black dark:text-green">

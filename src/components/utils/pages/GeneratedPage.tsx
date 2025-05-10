@@ -1,8 +1,9 @@
 import React from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { GeneratedTable } from "./GeneratedTable";
-import { JSX } from "react/jsx-runtime";
+import { CustomTable } from "./CustomTable";
+import { CustomUL } from "./CustomUL";
+import { CustomOL } from "./CustomOL";
 
 interface GeneratedPageProps extends React.ComponentPropsWithRef<"div"> {
   pageName: string;
@@ -17,21 +18,14 @@ export const GeneratedPage = ({
     setPageContent(markdownFile.markdown as string);
   };
 
-  React.useEffect(() => {
+  React.useMemo(() => {
     generateContent();
   }, [pageName, pageContent, setPageContent]);
 
   const customComponents = {
-    table: (
-      props: JSX.IntrinsicAttributes &
-        Omit<
-          React.DetailedHTMLProps<
-            React.TableHTMLAttributes<HTMLTableElement>,
-            HTMLTableElement
-          >,
-          "ref"
-        >
-    ) => <GeneratedTable {...props} />,
+    table: (props: any) => <CustomTable {...props} />,
+    ul: (props: any) => <CustomUL {...props} />,
+    ol: (props: any) => <CustomOL {...props} />,
   };
   return (
     <Markdown remarkPlugins={[remarkGfm]} components={customComponents}>

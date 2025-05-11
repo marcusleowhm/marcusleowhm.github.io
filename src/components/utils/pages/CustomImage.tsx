@@ -4,7 +4,7 @@ export const CustomImage = ({alt, src, title}: React.ComponentPropsWithRef<"img"
   return (
     <figure className="p-4 text-center">
         <img src={src} alt={alt} className="m-auto max-w-full pb-2"/>
-        {title && <figcaption>{title}</figcaption>}
+        {title && <figcaption className="text-gray-500">{title}</figcaption>}
     </figure>
   )
 }

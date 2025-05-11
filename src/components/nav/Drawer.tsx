@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../Button";
 import { CloseSvg } from "../svg/CloseSvg";
 import { Link } from "react-router";
+import { pages } from "@/config/pages";
 
 interface DrawerProps extends React.ComponentPropsWithRef<"div"> {
   setIsDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -14,12 +15,7 @@ export const Drawer = ({
   const handleMenuItemClick = () => {
     setIsDrawerOpen(false);
   };
-  const createClassForLink = (): string => {
-    return "no-underline mx-4 m-2 rounded-lg hover:bg-green ";
-  };
-  const createClassForMenuItem = (): string => {
-    return "p-4 text-green hover:text-white";
-  };
+
   return (
     <div
       className={`fixed top-0 left-0 z-40 p-2 overflow-y-auto transition-all bg-gray-100 dark:bg-gray-900 w-full h-screen ${className}`.trim()}
@@ -31,27 +27,16 @@ export const Drawer = ({
         </Button>
       </div>
       <div className="flex flex-col">
-        <Link
-          className={`${createClassForLink()}`}
-          onClick={handleMenuItemClick}
-          to="/"
-        >
-          <div className={createClassForMenuItem()}>About Me</div>
-        </Link>
-        <Link
-          className={`${createClassForLink()}`}
-          onClick={handleMenuItemClick}
-          to="/experience"
-        >
-          <div className={createClassForMenuItem()}>Experience</div>
-        </Link>
-        <Link
-          className={`${createClassForLink()}`}
-          onClick={handleMenuItemClick}
-          to="/projects"
-        >
-          <div className={createClassForMenuItem()}>Projects</div>
-        </Link>
+        {pages.map(({ path, title }, index) => (
+          <Link
+            key={index}
+            className="no-underline mx-4 m-2 rounded-lg hover:bg-green "
+            onClick={handleMenuItemClick}
+            to={path as string}
+          >
+            <div className="p-4 text-green hover:text-white">{title}</div>
+          </Link>
+        ))}
       </div>
     </div>
   );

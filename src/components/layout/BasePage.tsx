@@ -4,6 +4,8 @@ import { Navbar } from "@/components/nav/Navbar";
 import { Button } from "@/components/Button";
 import { Drawer } from "../nav/Drawer";
 import { BurgerMenuSvg } from "../svg/BurgerMenuSvg";
+import { pages } from "@/config/pages";
+import { useLocation } from "react-router";
 
 export const BasePage = ({
   children,
@@ -13,6 +15,11 @@ export const BasePage = ({
   const DARK_BACKGROUND_COLOR = "dark:bg-gray-900";
   const BORDER_COLOR = "border-gray-300";
   const DARK_BORDER_COLOR = "dark:border-gray-400"
+
+  const location = useLocation();
+  const getPageTitle = () => {
+    return pages.filter(({ path }) => path === location.pathname)[0].title;
+  }
 
   return (
     <>
@@ -32,6 +39,7 @@ export const BasePage = ({
         >
           <BurgerMenuSvg />
         </Button>
+        <div className="md:hidden col-start-2 text-center content-center text-green">{getPageTitle()}</div>
       </GridLayout>
       <Drawer
         className={`md:hidden ${

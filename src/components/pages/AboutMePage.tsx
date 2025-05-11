@@ -9,7 +9,7 @@ export const AboutMe = (): React.JSX.Element => {
   return (
     <BasePage>
       <div className="text-black dark:text-green">
-        <GeneratedPage pageName={pageName}/>
+        <GeneratedPage pageName={pageName} />
       </div>
     </BasePage>
   );

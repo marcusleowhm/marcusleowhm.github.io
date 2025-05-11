@@ -4,6 +4,8 @@ import remarkGfm from "remark-gfm";
 import { CustomTable } from "./CustomTable";
 import { CustomUL } from "./CustomUL";
 import { CustomOL } from "./CustomOL";
+import { CustomParagraph } from "./CustomParagraph";
+import { CustomImage } from "./CustomImage";
 
 interface GeneratedPageProps extends React.ComponentPropsWithRef<"div"> {
   pageName: string;
@@ -26,6 +28,8 @@ export const GeneratedPage = ({
     table: (props: any) => <CustomTable {...props} />,
     ul: (props: any) => <CustomUL {...props} />,
     ol: (props: any) => <CustomOL {...props} />,
+    p: (props: any) => <CustomParagraph {...props} />,
+    img: (props: any) => <CustomImage {...props} />,
   };
   return (
     <Markdown remarkPlugins={[remarkGfm]} components={customComponents}>

@@ -27,13 +27,9 @@ const buildClass = (variant: "contained" | "outlined" | "text" = "contained") =>
 }
 
 const createStyleObject = (variant: string): {[key: string]: string} => {
-    const common = {
-        flex: "flex-1"
-    }
     switch (variant) {
         case "contained": 
         return {
-            ...common,
             color: "bg-green",
             textColor: "text-white dark:text-gray-900",
             radius: "rounded-xl",
@@ -41,7 +37,6 @@ const createStyleObject = (variant: string): {[key: string]: string} => {
         }
         case "outlined": 
         return {
-            ...common,
             border: "border-solid",
             borderColor: "border-green",
             textColor: "text-green",
@@ -50,7 +45,6 @@ const createStyleObject = (variant: string): {[key: string]: string} => {
         }
         case "text": 
         return {
-            ...common,
             textColor: "text-green dark:text-green",
         }
         default: 

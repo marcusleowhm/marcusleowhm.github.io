@@ -1,6 +1,5 @@
 import { AboutMePage } from "@/components/pages/AboutMePage";
 import { ExperiencePage } from "@/components/pages/ExperiencePage";
-import { ProjectPage } from "@/components/pages/ProjectPage";
 
 export const pages: { [key: string]: string | React.JSX.Element }[] = [
   {

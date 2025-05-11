@@ -15,12 +15,7 @@ export const BasePage = ({
   const DARK_BACKGROUND_COLOR = "dark:bg-gray-900";
   const BORDER_COLOR = "border-gray-300";
   const DARK_BORDER_COLOR = "dark:border-gray-400"
-
   const location = useLocation();
-  const getPageTitle = () => {
-    return pages.filter(({ path }) => path === location.pathname)[0].title;
-  }
-
   return (
     <>
       <GridLayout
@@ -39,7 +34,7 @@ export const BasePage = ({
         >
           <BurgerMenuSvg />
         </Button>
-        <div className="md:hidden col-start-2 text-center content-center text-green">{getPageTitle()}</div>
+        <div className="md:hidden col-start-2 text-center content-center text-green">{pages.filter(({ path }) => path === location.pathname)[0].title}</div>
       </GridLayout>
       <Drawer
         className={`md:hidden ${

@@ -13,9 +13,9 @@ export const pages: { [key: string]: string | React.JSX.Element }[] = [
     title: "Experience",
     element: <ExperiencePage />
   },
-  {
-    path: "/projects",
-    title: "Projects",
-    element: <ProjectPage />
-  }
+  // {
+  //   path: "/projects",
+  //   title: "Projects",
+  //   element: <ProjectPage />
+  // }
 ];

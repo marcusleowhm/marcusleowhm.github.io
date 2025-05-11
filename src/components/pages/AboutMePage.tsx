@@ -1,6 +1,6 @@
 import React from "react";
 import { BasePage } from "@/components/layout/BasePage";
-import { GeneratedPage } from "@/components/utils/pages/GeneratedPage";
+import { GeneratedPage } from "@/components/markdown/GeneratedPage";
 import { useTitle } from "@/hooks/useTitle";
 
 export const AboutMePage = (): React.JSX.Element => {

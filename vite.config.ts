@@ -7,7 +7,8 @@ import path from "path";
 export default defineConfig({
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src")
+      "@": path.resolve(__dirname, "./src"),
+      "@tests": path.resolve(__dirname, "./tests")
     }
   },
   plugins: [react(), plugin({ mode: [Mode.MARKDOWN]})],
@@ -15,6 +16,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './tests/setup.ts',
+    css: true,
   },
   css: {
     preprocessorOptions: {

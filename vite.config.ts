@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { Mode, plugin } from "vite-plugin-markdown";
 import path from "path";
@@ -11,6 +11,11 @@ export default defineConfig({
     }
   },
   plugins: [react(), plugin({ mode: [Mode.MARKDOWN]})],
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './tests/setup.ts',
+  },
   css: {
     preprocessorOptions: {
       scss: {
@@ -19,4 +24,4 @@ export default defineConfig({
       }
     }
   }
-})
+} as UserConfig)

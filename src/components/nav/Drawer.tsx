@@ -30,7 +30,7 @@ export const Drawer = ({
             onClick={() => setIsDrawerOpen(false)}
             to={path as string}
           >
-            <div className="p-4 text-green hover:text-white">{title}</div>
+            <div className="p-4 text-green hover:text-white hover:dark:text-gray-900">{title}</div>
           </Link>
         ))}
       </div>

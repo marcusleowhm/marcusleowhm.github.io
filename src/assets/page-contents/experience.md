@@ -1,7 +1,7 @@
-##### Thoughtworks Singapore Pte Ltd
+##### **Thoughtworks Singapore Pte Ltd**
 ###### (Nov 2023 to Present)
 ---
-_Software Developer / Consultant_
+**_Software Developer / Consultant_**
 - Developed frontend application as proof-of-concept using ArcGIS maps SDK for Javascript
 - Paired up with squad members to develop features on backend application as a microservice
 - Managed cloud infrastructure using Terraform IaC (Infrastructure as Code)
@@ -9,10 +9,10 @@ _Software Developer / Consultant_
 - Led knowledge sharing/gathering sessions to share new learnings and gather feedback from the team regarding design directions
 - Implemented business functional requirement using test-driven development (TDD)
 
-##### Marketnode
+##### **Marketnode**
 ###### (May 2022 to Mar 2022)
 ---
-_Software Engineer_
+**_Software Engineer_**
 - Assisted technology partner company with provisioning cloud resources on Amazon Web Services (AWS) using Terraform
 - Performed code review to ensure adherence to company's coding standards
 - Developed a proof-of-concept for the company's implementation of Hyperledger fabric blockchain
@@ -21,10 +21,10 @@ _Software Engineer_
 - Wrote scripts to extract and transform data for report generation using python
 - Collaborated with UI/UX designers on wireframing and gathering requirements from product team
 
-##### DBS Bank Ltd
+##### **DBS Bank Ltd**
 ###### (Jan 2021 to Apr 2022)
 ---
-_SEED (Programme Hire)_
+**_SEED (Programme Hire)_**
 - Collaborated with business analyst to develop REST API using Spring Boot
 - Worked with frontend engineers on API interface and design
 - Designed database schema to support application

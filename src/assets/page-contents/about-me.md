@@ -1,3 +1,15 @@
-Hi! And welcome to my page. My name is Marcus, and I am a software engineer from Singapore. I currently work in Thoughtworks Singapore, building backend applications, maintaining infrastructure on the cloud, and maintaining CI/CD pipelines. I occasionally do some bash scripting as well to improve productivity by automating the more mundane and repetitive tasks at work. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Hi! Welcome to my page. I’m **Marcus**, a software engineer from Singapore, currently working at Thoughtworks Singapore. I build backend applications, manage cloud infrastructure, and maintain CI/CD pipelines. I also write the occasional bash script to automate tedious tasks and improve workflow efficiency. My path into tech wasn’t straightforward. I hold a bachelor's degree in Business Management from Singapore Management University (SMU), where I first picked up programming out of curiosity in my sophomore year. Fascinated by its potential, I quickly became hooked. After graduating, I started my career in finance as a valuation associate before making the leap into tech, beginning with a role at DBS - and the rest is history.
 
-![image](/assets/about-me-photo.png "This is me")
+The following are what I work with mostly:
+
+#### Programming Languages:
+|       |       |        |
+| ----- | ----- | ------ |
+| !["java icon"](/assets/icons8-java-48.png) | !["javascript icon](/assets/icons8-javascript-48.png) | !["python icon"](/assets/icons8-python-48.png) |
+
+#### Frameworks/Tools/Platforms:
+|       |       |        |       |       |       |
+| ----- | ----- | ------ | ----- | ----- | ----- |
+| !["terraform icon"](/assets/icons8-terraform-48.png) | !["aws icon"](/assets/icons8-aws-48.png) | !["gitlab icon"](/assets/icons8-gitlab-48.png) | !["postgres icon"](/assets/icons8-postgres-48.png) | !["react icon"](/assets/icons8-react-48.png) | !["springboot icon"](/assets/icons8-spring-boot-48.png) |
+
+!["picture of me"](/assets/about-me-photo.png "This is me 😊")

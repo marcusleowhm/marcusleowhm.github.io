@@ -1,15 +1,14 @@
-Hi! Welcome to my page. I’m **Marcus**, a software engineer from Singapore, currently working at Thoughtworks Singapore. I build backend applications, manage cloud infrastructure, and maintain CI/CD pipelines. I also write the occasional bash script to automate tedious tasks and improve workflow efficiency. My path into tech wasn’t straightforward. I hold a bachelor's degree in Business Management from Singapore Management University (SMU), where I first picked up programming out of curiosity in my sophomore year. Fascinated by its potential, I quickly became hooked. After graduating, I started my career in finance as a valuation associate before making the leap into tech, beginning with a role at DBS - and the rest is history.
+Hi! Welcome to my page. I’m **Marcus**, a software engineer from Singapore, currently working at Thoughtworks Singapore. I build backend applications, manage cloud infrastructure, and maintain CI/CD pipelines. I also write the occasional bash script to automate tedious tasks and improve workflow efficiency at work. I hold a bachelor's degree in Business Management from Singapore Management University (SMU), where I first picked up programming through a textbook out of curiosity in my sophomore year. Fascinated by its potential, I quickly became hooked. After graduating, I started my career in finance as a valuation associate before making the leap into tech, beginning with a role at DBS - and the rest is history. Life at work has been a never-ending journey of growth and learning, and I am forever grateful for the kind people who I met along the way, and whom have uplifted me to become the person I am.
 
-The following are what I work with mostly:
+I have always been a technology kind of guy. At 14, I somehow managed to convince my parents to support me in building my first PC. With their blessings (financially and mentally), I was able to tinker with my very own computer, installing a fresh copy of Windows (XP at that time), somehow learning what WiFi is, how to login to the router using the web browser, and setting static IP addresses (before I even knew what IP addresses were). Over time, I find myself to be the IT support guy at home and I realised I had a knack for computers. In my free time, I like to play video games, especially those in the **souls-like** genre. There is nothing that can compare to dying a hundred times in-game and spending the whole day on a single boss fight only to achieve nothing for the day. These days, I am into really lame (read - _relaxing_) simulator games - Car Mechanic, Contraband Police, Crime Scene Cleaner.
 
-#### Programming Languages:
+##### Stuff I am familar with:
 |       |       |        |
 | ----- | ----- | ------ |
-| !["java icon"](/assets/icons8-java-48.png) | !["javascript icon](/assets/icons8-javascript-48.png) | !["python icon"](/assets/icons8-python-48.png) |
+| !["java icon"](/assets/icons8-java-48.png "Java") | !["javascript icon](/assets/icons8-javascript-48.png "Javascript") | !["python icon"](/assets/icons8-python-48.png "Python") |
 
-#### Frameworks/Tools/Platforms:
 |       |       |        |       |       |       |
 | ----- | ----- | ------ | ----- | ----- | ----- |
-| !["terraform icon"](/assets/icons8-terraform-48.png) | !["aws icon"](/assets/icons8-aws-48.png) | !["gitlab icon"](/assets/icons8-gitlab-48.png) | !["postgres icon"](/assets/icons8-postgres-48.png) | !["react icon"](/assets/icons8-react-48.png) | !["springboot icon"](/assets/icons8-spring-boot-48.png) |
+| !["terraform icon"](/assets/icons8-terraform-48.png "Terraform") | !["aws icon"](/assets/icons8-aws-48.png "AWS") | !["gitlab icon"](/assets/icons8-gitlab-48.png "GitLab") | !["postgres icon"](/assets/icons8-postgres-48.png "Postgres") | !["react icon"](/assets/icons8-react-48.png "React") | !["springboot icon"](/assets/icons8-spring-boot-48.png "Spring Boot") |
 
-!["picture of me"](/assets/about-me-photo.png "This is me 😊")
+!["picture of me"](/assets/about-me-photo.jpg "This is me 😊")

@@ -2,9 +2,10 @@ import React from "react";
 
 export const CustomImage = ({
   alt,
-  src
+  src,
+  title,
 }: React.ComponentPropsWithRef<"img">): React.JSX.Element => {
   return (
-    <img src={src} alt={alt} className="p-4" />
+    <img src={src} alt={alt} title={title} className="p-4" />
   );
 };

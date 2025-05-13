@@ -10,6 +10,9 @@ import { CustomImageWithCaptions } from "./CustomImageWithCaption";
 import { CustomImage } from "./CustomImage";
 import { CustomAnchor } from "./CustomAnchor";
 import { CustomH4 } from "./CustomH4";
+import { CustomLI } from "./CustomLI";
+import { CustomH5 } from "./CustomH5";
+import { CustomH6 } from "./CustomH6";
 
 interface GeneratedPageProps extends React.ComponentPropsWithRef<"div"> {
   pageName: string;
@@ -30,11 +33,17 @@ export const GeneratedPage = ({
 
   const UnwrapImageIfFound = (props: any) => {
     const element: React.ReactElement<any, string> = props.children;
+    if (element.props == undefined) {
+      return <CustomParagraph {...props} />;
+    }
     // figure
-    if (React.isValidElement(element) && element.props.node.tagName === "img") {
-      const { title, src, alt } = element.props;
-      return <CustomImageWithCaptions src={src} alt={alt} title={title} />;
-    }    
+    if (React.isValidElement(element) && element.props.node !== undefined) {
+      if (element.props.node.tagName === "img") {
+        const { title, src, alt } = element.props;
+        return <CustomImageWithCaptions src={src} alt={alt} title={title} />;
+      }
+      return <CustomParagraph {...props} />;
+    }
     return <CustomParagraph {...props} />;
   };
 
@@ -42,10 +51,13 @@ export const GeneratedPage = ({
     table: (props: any) => <CustomTable {...props} />,
     ul: (props: any) => <CustomUL {...props} />,
     ol: (props: any) => <CustomOL {...props} />,
+    li: (props: any) => <CustomLI {...props} />,
     p: (props: any) => UnwrapImageIfFound(props),
     img: (props: any) => <CustomImage {...props} />,
     a: (props: any) => <CustomAnchor {...props} />,
-    h4: (props: any) => <CustomH4 {...props} />
+    h4: (props: any) => <CustomH4 {...props} />,
+    h5: (props: any) => <CustomH5 {...props} />,
+    h6: (props: any) => <CustomH6 {...props} />,
   };
   return (
     <Markdown

@@ -22,9 +22,9 @@ export const GeneratedPage = ({
     setPageContent(markdownFile.markdown as string);
   };
 
-  React.useMemo(() => {
+  React.useEffect(() => {
     generateContent();
-  }, [pageName, pageContent, setPageContent]);
+  }, [pageName]);
 
   const UnwrapImageIfFound = (props: any) => {
     if (React.isValidElement(props.children)) {

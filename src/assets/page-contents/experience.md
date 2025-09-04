@@ -10,7 +10,7 @@
 - Implemented business functional requirement using test-driven development (TDD)
 
 ##### **Marketnode**
-###### (May 2022 to Mar 2022)
+###### (May 2022 to Mar 2023)
 ---
 **_Software Engineer_**
 - Assisted technology partner company with provisioning cloud resources on Amazon Web Services (AWS) using Terraform
